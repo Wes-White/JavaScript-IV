@@ -27,7 +27,7 @@ class Instructor extends Person{
     }
 }
    
-class Student extends Person{ 
+class Student extends (Person){ 
     constructor(studAttributes){ 
         super(studAttributes)
         this.previousBackground = studAttributes.previousBackground
@@ -203,7 +203,6 @@ class ProjectManagers extends(Instructor){
    console.log(courtney.speak())
    console.log(elga.speak())
    console.log(elga.demo('JavaScript'))
-   console.log(elga.grade(sabrina, 'CSS'))
    console.log(geraldo.speak())
    console.log(geraldo.demo('LESS'))
    console.log(geraldo.grade(greg, 'HTML'))
